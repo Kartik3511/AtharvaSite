@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Filmography - Bornil Anurag</title>
+  <title>Filmography - Atharva Mhaske</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -12,12 +12,55 @@
   <style>
     html { scroll-behavior: smooth; }
     body, html { margin: 0; padding: 0; width: 100%; height: 100%; background: black; font-family: 'Poppins', sans-serif; color: white; }
-    .navbar { font-family: 'Unna',sans-serif;width: 100%; padding: 20px 0; background: black; display: flex; justify-content: center; border-bottom: 1px solid rgba(255,255,255,0.2); position: sticky; top: 0; z-index: 100; }
+    .navbar { font-family: 'Unna',sans-serif;width: 100%; padding: 20px 0;  display: flex; justify-content: center;  position: sticky; top: 15px; z-index: 100; }
     .navbar ul { list-style: none; display: flex; gap: 50px; padding: 0; margin: 0; }
     .navbar a { color: white; text-decoration: none; font-weight: 600; font-size: 18px; letter-spacing: 0.5px; transition: color 0.3s ease; }
     .navbar a::after { content: ''; display: block; width: 0; height: 2px; background: white; transition: width 0.3s; margin-top: 5px; }
     .navbar a:hover::after { width: 100%; }
     .navbar a:hover { color: #ccc; }
+    .navbar .separator {
+  color: white;
+  opacity: 0.5;
+  font-size: 68px;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  position: relative;
+  top: -27px;
+}
+
+.navbar .separator::before {
+  content: "—"; /* The actual dash */
+}
+    .separator-with-logo {
+  position: relative;
+  text-align: center;
+}
+
+.separator-with-logo::before {
+  content: "—";
+  font-size: 68px;
+  color: white;
+  opacity: 0.5;
+  display: block;
+  line-height: 1;
+  margin-top: -25px;
+}
+
+.separator-with-logo::after {
+  content: "";
+  position: absolute;
+  top: -40px; /* move logo above the dash */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 87px;
+  height: 87px;
+  background-image: url('logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 80%;
+}
+
     footer { text-align: center; font-size: 12px; line-height: 1.5; color: #aaa; padding: 20px; margin-top: 50px; }
     body.fade-in { animation: fadeInAnimation ease 1s; animation-iteration-count: 1; animation-fill-mode: forwards; }
     @keyframes fadeInAnimation { 0% {opacity: 0; transform: translateY(10px);} 100% {opacity: 1; transform: translateY(0);} }
@@ -31,10 +74,14 @@
 <nav class="navbar">
   <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="showreel.html">Showreel 2023</a></li>
+    <li class="separator"></li>
+    <li><a href="showreel.html">Showreel 2023-25</a></li>
+    <li class="separator-with-logo"></li>
     <li><a href="film.html">Filmography</a></li>
+    <li class="separator"></li>
     <li><a href="about.html">About</a></li>
   </ul>
+  
 </nav>
 
 <img src="featured-image.jpg" alt="Featured Film Image" style="width: 100%; height: auto; margin-top: 80px;">
@@ -50,9 +97,9 @@
 </div>
 
 <footer>
-  Freelance Cinematographer based in Mumbai. Currently open for new projects.<br>
-  (M) bornilanuragdp@gmail.com (P) +353 0871892063 | +91 9619531272 (I) @bornilanurag<br>
-  © 2023 - All rights reserved
+  Filmmaker based in Mumbai. Currently open for new projects.<br>
+  (M) fotofilms.in@gmail.com (P) +91 9823251314 | +91 7756803800 (I) @samosafoto<br>
+  © 2025 - All rights reserved
 </footer>
 
 
