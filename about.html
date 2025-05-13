@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About - Atharva Mhaske</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body, html { margin: 0; padding: 0; width: 100%; height: 100%; background: black; font-family: 'Poppins', sans-serif; color: white; }
+    .navbar { font-family: 'Unna',sans-serif;width: 100%; padding: 20px 0; display: flex; justify-content: center;  position: sticky; top: 15px; z-index: 100; }
+    .navbar ul { list-style: none; display: flex; gap: 50px; padding: 0; margin: 0; }
+    .navbar a { color: white; text-decoration: none; font-weight: 600; font-size: 18px; letter-spacing: 0.5px; transition: color 0.3s ease; }
+    .navbar a::after { content: ''; display: block; width: 0; height: 2px; background: white; transition: width 0.3s; margin-top: 5px; }
+    .navbar a:hover::after { width: 100%; }
+    .navbar a:hover { color: #ccc; }
+    .navbar .separator {
+  color: white;
+  opacity: 0.5;
+  font-size: 68px;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  position: relative;
+  top: -27px;
+}
+
+.navbar .separator::before {
+  content: "—"; /* The actual dash */
+}
+
+    footer { text-align: center; font-size: 12px; line-height: 1.5; color: #aaa; padding: 20px; margin-top: 50px; }
+    body.fade-in { animation: fadeInAnimation ease 1s; animation-iteration-count: 1; animation-fill-mode: forwards; }
+    @keyframes fadeInAnimation { 0% {opacity: 0; transform: translateY(10px);} 100% {opacity: 1; transform: translateY(0);} }
+    #scrollTopBtn { display: none; position: fixed; bottom: 40px; right: 30px; z-index: 99; background-color: #ffffff10; border: 1px solid #fff; color: white; cursor: pointer; padding: 10px 14px; border-radius: 50%; font-size: 18px; transition: 0.3s; }
+    #scrollTopBtn:hover { background-color: #ffffff20; }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="separator"></li>
+    <li><a href="showreel.html">Showreel 2023-25</a></li>
+    <li class="separator"></li>
+    <li><a href="film.html">Filmography</a></li>
+    <li class="separator"></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+  
+</nav>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; padding: 100px 50px 50px; gap: 50px;">
+  <div style="flex: 1; min-width: 300px;">
+    <h2>About</h2>
+    <p>In the past three years, I’ve directed and produced 15+ documentaries 
+      rooted in regional stories and real experiences. My work as a producer 
+      spans multiple award-winning short films with international recognition. I’ve 
+      also collaborated with brands like Jio, Ajio Luxe, and Azorte balancing 
+      independent storytelling with commercial work. </p>
+    <p>Always following curiosity wherever it leads. </p>
+    <div style="margin-top: 30px;">📍 Mumbai, India</div>
+    <div style="margin-top: 20px;">
+      ✉️ samosafoto@gmail.com <br>
+      📞 +91 9823251314 <br>
+      📸 @samosafoto<br>
+      <a href="https://drive.google.com/file/d/1SsmpbKDY_m6ONrqOVCESx5x8cp8-N9Ou/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">↗ View Resume</a>
+    </div>
+  </div>
+  <div style="flex: 1; min-width: 300px;">
+    <img src="your-image.jpg" alt="Bornil Anurag at work" style="width: 100%; border-radius: 8px;">
+  </div>
+</div>
+
+<footer>
+  Filmmaker based in Mumbai. Currently open for new projects.<br>
+  (M) fotofilms.in@gmail.com (P) +91 9823251314 | +91 7756803800 (I) @samosafoto<br>
+  © 2025 - All rights reserved
+</footer>
+
+
+<script>
+  document.body.classList.add('fade-in');
+  const scrollTopBtn = document.createElement("button");
+  scrollTopBtn.id = "scrollTopBtn";
+  scrollTopBtn.innerHTML = "↑";
+  document.body.appendChild(scrollTopBtn);
+  window.onscroll = function() {
+    if (document.documentElement.scrollTop > 100) { scrollTopBtn.style.display = "block"; }
+    else { scrollTopBtn.style.display = "none"; }
+  };
+  scrollTopBtn.onclick = function() {
+    document.documentElement.scrollTo({top: 0, behavior: "smooth"});
+  };
+</script>
+
+</body>
+</html>
