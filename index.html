@@ -19,7 +19,7 @@
       padding: 0;
       width: 100%;
       height: 100%;
-      overflow: hidden; /* 👉 Important: NO SCROLLING */
+      overflow: hidden; 
       background: black;
       font-family: 'Poppins', sans-serif;
       color: white;
@@ -87,6 +87,33 @@
 
 .navbar .separator::before {
   content: "—"; /* The actual dash */
+}
+    .separator-with-logo {
+  position: relative;
+  text-align: center;
+}
+
+.separator-with-logo::before {
+  content: "—";
+  font-size: 68px;
+  color: white;
+  opacity: 0.5;
+  display: block;
+  line-height: 1;
+  margin-top: -10px;
+}
+
+.separator-with-logo::after {
+  content: "";
+  position: absolute;
+  top: -30px; /* move logo above the dash */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background-image: url('logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 
@@ -176,7 +203,7 @@
       <li><a href="index.html">Home</a></li>
       <li class="separator"></li>
       <li><a href="showreel.html">Showreel 2023-25</a></li>
-      <li class="separator"></li>
+      <li class="separator-with-logo"></li>
       <li><a href="film.html">Filmography</a></li>
       <li class="separator"></li>
       <li><a href="about.html">About</a></li>
