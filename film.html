@@ -66,6 +66,17 @@
     @keyframes fadeInAnimation { 0% {opacity: 0; transform: translateY(10px);} 100% {opacity: 1; transform: translateY(0);} }
     #scrollTopBtn { display: none; position: fixed; bottom: 40px; right: 30px; z-index: 99; background-color: #ffffff10; border: 1px solid #fff; color: white; cursor: pointer; padding: 10px 14px; border-radius: 50%; font-size: 18px; transition: 0.3s; }
     #scrollTopBtn:hover { background-color: #ffffff20; }
+      a {
+      color:white; 
+      text-decoration: none; 
+    }
+
+    a:visited,
+    a:hover,
+    a:active,
+    a:focus {
+      color: white; 
+    }
   </style>
 </head>
 
@@ -85,16 +96,54 @@
 </nav>
 
 <img src="featured-image.jpg" alt="Featured Film Image" style="width: 100%; height: auto; margin-top: 80px;">
-<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding: 40px 20px;">
-  <div style="flex: 1 1 45%; max-width: 45%; min-width: 300px; display: flex; flex-direction: column;">
-    <img src="film1.jpg" alt="Film 1" style="width: 100%; border-radius: 8px;">
-    <p>01. Below The Window | Short Film | Ireland</p>
+<div style="display: grid; grid-template-columns: auto auto; gap: 40px; padding: 40px 20px;">
+  <!-- Film 1 -->
+  <div>
+    <a href="https://www.youtube.com/watch?v=cLlyVMPK3Eg&ab_channel=Jagnetics">
+    <img src="film1.jpg" alt="Film 1">
+    <p>01. Scoop of Ignorance | 2024</p>
+  </a>
   </div>
-  <div style="flex: 1 1 45%; max-width: 45%; min-width: 300px; display: flex; flex-direction: column;">
-    <img src="film2.jpg" alt="Film 2" style="width: 100%; border-radius: 8px;">
-    <p>02. Fado Menor | Short Film | Portugal</p>
+
+  <!-- Film 2 -->
+  <div>
+    <a href="https://www.imdb.com/title/tt11999332/">
+    <img src="film2.jpg" alt="Film 2">
+    <p>02. The Story of Vadapav | 2022</p>
+    </a>
+  </div>
+
+  <!-- Film 3 (spans first column only) -->
+  <div>
+    <a href="https://youtu.be/t9pKTfRAZF0">
+    <img src="film3.jpg" alt="Film 3">
+    <p>03.  Soul of a Sapling | 2024</p>
+    </a>
+  </div>
+  <!--Film 4-->
+    <div>
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7288497327906959361/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7288497327906959361%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29&originTrackingId=HKTf3DwbSxWIghT8aFutwQ%3D%3D">
+    <img src="film4.jpg" alt="Film 4">
+    <p>04.  Jio World Plaza - 1 Year Anniversary Video | 2024</p>
+    </a>
+  </div>
+    <!--Film 5-->
+    <div>
+    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7288498817484619776/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7288498817484619776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29&originTrackingId=JVqTuV3CSnG%2FQ2ssz%2Bb%2BYg%3D%3D">
+    <img src="film5.jpg" alt="Film 5">
+    <p>05.  Ajio Luxe Wkend 2025 - Day 1 Ramp Walk Edit | 2025</p>
+    </a>
+  </div>
+      <!--Film 6-->
+    <div>
+    <a href="https://www.youtube.com/watch?v=w9T7EmAP-kY&t=42s&ab_channel=samosafoto">
+    <img src="film6.jpg" alt="Film 6">
+    <p>06.  Naggar Castle & People - Manali Short Documentary  | 2024</p>
+    </a>
   </div>
 </div>
+
+
 
 <footer>
   Filmmaker based in Mumbai. Currently open for new projects.<br>
