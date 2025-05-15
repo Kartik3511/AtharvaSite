@@ -98,5 +98,25 @@
   overflow: hidden;
   text-overflow: ellipsis; 
 }
+/*Nav bar for all pages logo hover*/
+.separator-with-logo::after {
+  content: "";
+  position: absolute;
+  top: -25px; /* move logo above the dash */
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  width: 87px;
+  height: 87px;
+  background-image: url('logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 80%;
+  transition: transform 0.3s ease;
+}
+.separator-with-logo:hover::after {
+  transform: translateX(-50%) scale(1.1);
+  transition: transform 0.5s ease;
+  opacity: 90%;
+}
 
 
