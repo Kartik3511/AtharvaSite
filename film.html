@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Filmography - Atharva Mhaske</title>
+   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -83,22 +85,24 @@
 <body>
 
 <nav class="navbar">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li class="separator"></li>
-    <li><a href="showreel.html">Showreel 2023-25</a></li>
-    <li class="separator-with-logo"></li>
-    <li><a href="film.html">Filmography</a></li>
-    <li class="separator"></li>
-    <li><a href="about.html">About</a></li>
-  </ul>
+    <ul>
+      <li class="custom-font"><a href="index.html">Home</a></li>
+      <li class="separator"></li>
+      <li class="custom-font"><a href="showreel.html">Showreel 2023-25</a></li>
+      <li class="separator-with-logo"></li>
+      <li class="custom-font"><a href="film.html">Filmography</a></li>
+      <li class="separator"></li>
+      <li class="custom-font"><a href="about.html">About</a></li>
+    </ul>
   
 </nav>
 
 <img src="featured-image.jpg" alt="Featured Film Image" style="width: 100%; height: auto; margin-top: 80px;">
-<div style="display: grid; grid-template-columns: auto auto; gap: 40px; padding: 40px 20px;">
+<div class="film-grid-wrapper">
+<div class="film-grid">
   <!-- Film 1 -->
-  <div>
+   <div class="film-row">
+  <div class="film-card">
     <a href="https://www.youtube.com/watch?v=cLlyVMPK3Eg&ab_channel=Jagnetics">
     <img src="film1.jpg" alt="Film 1">
     <p>01. Scoop of Ignorance | 2024</p>
@@ -106,41 +110,47 @@
   </div>
 
   <!-- Film 2 -->
-  <div>
+  <div class="film-card-right">
     <a href="https://www.imdb.com/title/tt11999332/">
     <img src="film2.jpg" alt="Film 2">
     <p>02. The Story of Vadapav | 2022</p>
     </a>
   </div>
+  </div>
 
   <!-- Film 3 (spans first column only) -->
-  <div>
+   <div class="film-row">
+  <div class="film-card">
     <a href="https://youtu.be/t9pKTfRAZF0">
     <img src="film3.jpg" alt="Film 3">
     <p>03.  Soul of a Sapling | 2024</p>
     </a>
   </div>
   <!--Film 4-->
-    <div>
+  <div class="film-card-right">
     <a href="https://www.linkedin.com/feed/update/urn:li:activity:7288497327906959361/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7288497327906959361%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29&originTrackingId=HKTf3DwbSxWIghT8aFutwQ%3D%3D">
     <img src="film4.jpg" alt="Film 4">
     <p>04.  Jio World Plaza - 1 Year Anniversary Video | 2024</p>
     </a>
   </div>
+  </div>
     <!--Film 5-->
-    <div>
+       <div class="film-row">
+  <div class="film-card">
     <a href="https://www.linkedin.com/feed/update/urn:li:activity:7288498817484619776/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7288498817484619776%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29&originTrackingId=JVqTuV3CSnG%2FQ2ssz%2Bb%2BYg%3D%3D">
     <img src="film5.jpg" alt="Film 5">
     <p>05.  Ajio Luxe Wkend 2025 - Ramp Walk Edit | 2025</p>
     </a>
   </div>
       <!--Film 6-->
-    <div>
+  <div class="film-card-right">
     <a href="https://www.youtube.com/watch?v=w9T7EmAP-kY&t=42s&ab_channel=samosafoto">
     <img src="film6.jpg" alt="Film 6">
     <p>06.  Naggar Castle & People - Manali Short Documentary  | 2024</p>
     </a>
   </div>
+  </div>
+</div>
 </div>
 
 

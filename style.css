@@ -1,0 +1,102 @@
+    .custom-font{
+      font-family:"Bricolage Grotesque";
+    }
+
+/*film page*/
+  @media (max-width: 768px) {
+  .film-row {
+  flex-direction: column;
+  align-items: center;
+}
+.film-card{
+    flex:1 1 100%;
+    max-width: 90%;
+}
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+  }
+
+  .navbar .separator,
+  .separator-with-logo::before {
+    font-size: 30px;
+    top: 0;
+  }
+
+  .separator-with-logo::after {
+    width: 50px;
+    height: 50px;
+    top: -20px;
+  }
+
+  .content img {
+    width: 90vw;
+    height: auto;
+  }
+
+  .video-background {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+  }
+
+
+  img {
+    width: 100% ;
+    height: auto;
+  }
+
+  footer {
+    font-size: 10px;
+    padding: 10px;
+  }
+}
+.film-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.film-row {
+  display: flex;
+  justify-content: flex-start;
+  gap: 80px;
+  flex-wrap: nowrap;
+}
+
+.film-card {
+  flex: 0 0 48%;
+  max-width: 48vw;     
+  min-width: 280px;    
+  box-sizing: border-box; 
+}
+
+.film-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.film-grid-wrapper {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+.film-card-right {
+  flex: 0 0 48%;
+  margin-left: auto;
+  max-width: 48vw;     
+  min-width: 280px;    
+  box-sizing: border-box; 
+}
+.film-card p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+
