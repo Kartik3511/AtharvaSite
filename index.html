@@ -26,112 +26,16 @@
       font-family: 'Poppins', sans-serif;
       color: white;
     }
-
-    .navbar {
-      font-family: 'Unna',sans-serif;
-      width: 100%;
-      padding: 20px 0;
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      top: 0;
-      z-index: 100;
-    }
-
-    .navbar ul {
-      list-style: none;
-      display: flex;
-      gap: 50px;
-      padding: 0;
-      margin: 0;
-      position: relative;
-      align-items: center;
-    }
-
-
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 18px;
-      letter-spacing: 0.5px;
-      transition: color 0.3s ease;
-    }
-
-
-    .navbar a::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 2px;
-      background: white;
-      transition: width 0.3s;
-      margin-top: 5px;
-    }
-
-    .navbar a:hover::after {
-      width: 100%;
-    }
-
-    .navbar a:hover {
-      color: #ccc;
-    }
-    .navbar .separator {
-  color: white;
-  opacity: 0.5;
-  font-size: 68px;
-  line-height: 1;
-  user-select: none;
-  pointer-events: none;
-  position: relative;
-  top: -7px;
+.navbar{
+  position:absolute;
 }
-
-.navbar .separator::before {
-  content: "—"; /* The actual dash */
-}
-    .separator-with-logo {
-  position: relative;
-  text-align: center;
-}
-
-.separator-with-logo::before {
-  content: "—";
-  font-size: 68px;
-  color: white;
-  opacity: 0.5;
-  display: block;
-  line-height: 1;
-  margin-top: -10px;
-}
-
-.separator-with-logo::after {
-  content: "";
-  position: absolute;
-  top: -25px; /* move logo above the dash */
-  left: 50%;
-  transform: translateX(-50%) scale(1);
-  width: 87px;
-  height: 87px;
-  background-image: url('logo.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 80%;
-  transition: transform 0.3s ease;
-}
-.separator-with-logo:hover::after {
-  transform: translateX(-50%) scale(1.1);
-  transition: transform 0.5s ease;
-  opacity: 90%;
-}
-
 .video-background {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 98vw;
+  height: 98vh;
   z-index: -1;
 }
     
@@ -154,7 +58,7 @@
 }
 
 .content:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   opacity: 0.85;
 }
     footer {
@@ -185,6 +89,26 @@
         transform: translateY(0);
       }
     }
+    html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.cover {
+  position: fixed; /* or absolute */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('your-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 40%;
+}
+
+    
   </style>
 </head>
 
@@ -208,10 +132,12 @@
     
   </nav>
   <body>
+    <img class="cover" src="black.jpg">
   <div class="wrapper">
     <img class="content" src="croppedhome.png" alt="">
   </div>
 </body>
+
 
 
   <footer>

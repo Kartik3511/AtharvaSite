@@ -15,60 +15,11 @@
   <style>
     html { scroll-behavior: smooth; }
     body, html { margin: 0; padding: 0; width: 100%; height: 100%; background: black; font-family: 'Poppins', sans-serif; color: white; }
-    .navbar { font-family: 'Unna',sans-serif;width: 100%; padding: 20px 0; display: flex; justify-content: center; position: sticky; top: 15px; z-index: 100; }
-    .navbar ul { list-style: none; display: flex; gap: 50px; padding: 0; margin: 0; }
-    .navbar a { color: white; text-decoration: none; font-weight: 600; font-size: 18px; letter-spacing: 0.5px; transition: color 0.3s ease; }
-    .navbar a::after { content: ''; display: block; width: 0; height: 2px; background: white; transition: width 0.3s; margin-top: 5px; }
-    .navbar a:hover::after { width: 100%; }
-    .navbar a:hover { color: #ccc; }
     footer { text-align: center; font-size: 12px; line-height: 1.5; color: #aaa; padding: 20px; margin-top: 50px; }
     body.fade-in { animation: fadeInAnimation ease 1s; animation-iteration-count: 1; animation-fill-mode: forwards; }
     @keyframes fadeInAnimation { 0% {opacity: 0; transform: translateY(10px);} 100% {opacity: 1; transform: translateY(0);} }
     #scrollTopBtn { display: none; position: fixed; bottom: 40px; right: 30px; z-index: 99; background-color: #ffffff10; border: 1px solid #fff; color: white; cursor: pointer; padding: 10px 14px; border-radius: 50%; font-size: 18px; transition: 0.3s; }
     #scrollTopBtn:hover { background-color: #ffffff20; }
-    .navbar .separator {
-  color: white;
-  opacity: 0.5;
-  font-size: 68px;
-  line-height: 1;
-  user-select: none;
-  pointer-events: none;
-  position: relative;
-  top: -27px;
-}
-
-.navbar .separator::before {
-  content: "—"; /* The actual dash */
-}
-    .separator-with-logo {
-  position: relative;
-  text-align: center;
-}
-
-.separator-with-logo::before {
-  content: "—";
-  font-size: 68px;
-  color: white;
-  opacity: 0.5;
-  display: block;
-  line-height: 1;
-  margin-top: -25px;
-}
-
-.separator-with-logo::after {
-  content: "";
-  position: absolute;
-  top: -40px; /* move logo above the dash */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 87px;
-  height: 87px;
-  background-image: url('logo.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 80%;
-}
-
   </style>
 </head>
 
