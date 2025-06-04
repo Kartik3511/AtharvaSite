@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Atharva Mhaske</title>
+  <link rel="icon" type="Image/png" href="lo">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,18 +43,19 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 98vw;
-  height: 98vh;
+  width: 100%;
+  height: auto;
   z-index: -1;
 }
     
 
 .wrapper {
-  height: 100vh;           
+  height: calc(100vh - 60px); /* or adjust based on your nav height */
   display: flex;
-  justify-content: center;  
-  align-items: center;       
-  padding: 0 10px;            
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .content {
@@ -61,12 +63,12 @@ body {
   width: 90vw;
   height: auto;
   display: block;
+  transform: translateY(-90px) scale(1);
   transition: transform 0.5s ease, opacity 0.5s ease;
-  transform-origin: center center;
 }
 
 .content:hover {
-  transform: scale(1.03);
+  transform: translateY(-90px) scale(1.03); /* keep same Y shift */
   opacity: 0.85;
 }
     footer {
@@ -115,25 +117,37 @@ body {
   z-index: -1;
   opacity: 40%;
 }
+    .kartikgrid{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: url('kartik_grid.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 1000;
+      opacity: 50%;
+    }
 
     
   </style>
 </head>
 
 <body>
-
   <video autoplay muted loop playsinline preload="auto" class="video-background">
-    <source src="showreel2.mp4" type="video/mp4">
+    <source src="BG_VIDEO.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
   </video>
 
   <nav class="navbar">
     <ul>
-      <li class="custom-font"><a href="index.html">Home</a></li>
+      <li class="custom-font"><a href="/">Home</a></li>
       <li class="separator"></li>
-      <li class="custom-font"><a href="showreel.html">Showreel 2023-25</a></li>
+      <li class="custom-font"><a href="showreel.html">Showreel</a></li>
       <li class="separator-with-logo"></li>
-      <li class="custom-font"><a href="film.html">Filmography</a></li>
+      <li class="custom-font"><a href="film.html">Projects</a></li>
       <li class="separator"></li>
       <li class="custom-font"><a href="about.html">About</a></li>
     </ul>
@@ -149,9 +163,9 @@ body {
 
 
   <footer>
-    Filmmaker based in Mumbai. Currently open for new projects.<br>
-    (M) fotofilms.in@gmail.com (P) +91 9823251314 | +91 7756803800 (I) @samosafoto<br>
-    © 2025 - All rights reserved
+  Filmmaker based in Mumbai. Currently open for new projects.<br>
+  (M) hi@atharvamhaske.com (P) +91 9823251314 | +91 7756803800 (I) @samosafoto<br>
+  © 2025 - All rights reserved
   </footer>
 
 <script>
