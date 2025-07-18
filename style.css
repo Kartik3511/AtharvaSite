@@ -49,7 +49,7 @@
 }
 /*Nav bar for all pages logo hover*/
 .separator-with-logo::before {
-  content: "—";
+  content: "";
   font-size: 68px;
   color: white;
   opacity: 0.5;
@@ -60,7 +60,7 @@
 .separator-with-logo::after {
   content: "";
   position: absolute;
-  top: -40px; /* move logo above the dash */
+  top: -26px; /* move logo above the dash */
   left: 50%;
   transform: translateX(-50%) scale(1);
   width: 87px;
@@ -99,6 +99,7 @@
     .separator-with-logo {
   position: relative;
   text-align: center;
+  width: 40px;
 }
 
 
@@ -111,6 +112,8 @@
       color: white;
       text-decoration: none; 
     }
+
+
 
 
 

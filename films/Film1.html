@@ -88,6 +88,15 @@
       padding: 40px 50px 10px;
       font-weight: 600;
     }
+    .navigation-bar a {
+  display: inline-block;  /* Makes the link's clickable area expand */
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: color 0.3s;
+}
   .Iframe {
     display: flex;
     justify-content: center;
@@ -95,17 +104,18 @@
     height: 100%; 
     margin-bottom: 2%;        
   }
-      footer {
-      position: absolute;
-      bottom: 10px;
-      width: 100%;
-      text-align: center;
-      font-size: 12px;
-      line-height: 1.5;
-      color: #aaa;
-      z-index: 10;
-      padding: 0 10px;
-    }
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #aaa;
+  z-index: 10;
+  padding: 20px 10px 10px;
+  margin-top: 50px;
+  background: black; /* optional */
+}
+
         body.fade-in {
       animation: fadeInAnimation ease 1s;
       animation-iteration-count: 1;
@@ -129,14 +139,15 @@
   <!-- Reuse your site-wide navbar -->
   <nav class="navbar">
     <ul>
-      <li class="custom-font"><a href="../index.html">Home</a></li>
+      <li class="custom-font"><a href="/">Home</a></li>
       <li class="separator"></li>
-      <li class="custom-font"><a href="../showreel.html">Showreel 2023-25</a></li>
+      <li class="custom-font"><a href="../showreel.html">Showreel</a></li>
       <li class="separator-with-logo"></li>
-      <li class="custom-font"><a href="../film.html">Filmography</a></li>
+      <li class="custom-font"><a href="../film.html">Projects</a></li>
       <li class="separator"></li>
       <li class="custom-font"><a href="../about.html">About</a></li>
     </ul>
+    
   </nav>
 
   <!-- Hero Image -->
@@ -230,11 +241,10 @@ Official Selection<br></li>
   </div>
 
   <!-- Navigation Bar -->
-  <div class="navigation-bar">
-    <span>← <a href="previous-film.html">Previous Project</a></span>
-    <span><a href="next-film.html">Next Project</a> →</span>
-  </div>
-
+<div class="navigation-bar">
+  <a href="previous-film.html"></a>
+  <a href="Film2.html">Next Project →</a>
+</div>
   <!-- Custom Footer -->
 <footer>
   Filmmaker based in Mumbai. Currently open for new projects.<br>
