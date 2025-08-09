@@ -3,50 +3,76 @@
     }
 
 /*film page*/
+/* ---------- Film grid (fixed responsive) ---------- */
+.film-grid-wrapper {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 40px 5.4%;  /* gives left/right breathing room — keeps your original 5.4% */
+  box-sizing: border-box;
+}
+
 .film-grid {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 40px 20px;
 }
 
+/* Each row holds two columns, but will wrap on small screens */
 .film-row {
   display: flex;
-  justify-content: flex-start;
   gap: 70px;
-  flex-wrap: nowrap;
-  margin-right: 0;
-  margin-left: 5.4%;
+  flex-wrap: wrap;         /* <- ALLOW wrapping (was nowrap) */
+  align-items: flex-start;
+  margin: 0;               /* remove left offset that caused the large gutter */
 }
 
-.film-card {
-  flex: 0 0 48%;
-  max-width: 48vw;     
-  min-width: 280px;    
-  box-sizing: border-box; 
+/* Make the two film columns take up 50% each (minus gap); be flexible */
+.film-card,
+.film-card-right {
+  flex: 1 1 calc(50% - 35px);   /* 50% minus half the gap */
+  max-width: calc(50% - 35px);
+  box-sizing: border-box;
+  min-width: 240px;             /* keep small sensible min width */
 }
 
-.film-card img,.film-card-right img {
-  width: 90%;
+/* Images fill their card */
+.film-card img,
+.film-card-right img {
+  width: 100%;
   height: auto;
   display: block;
 }
-.film-grid-wrapper {
-  max-width: 2000px;
-  margin: 0 auto;
+
+/* Prevent long text from overflowing, keep small margin */
+.film-card p,
+.film-card-right p {
+  margin: 10px 0 0;
+  color: #ddd;
+  font-size: 14px;
 }
-.film-card-right {
-  flex: 0 0 48%;
-  margin-left: 0;
-  max-width: 48vw;     
-  min-width: 280px;    
-  box-sizing: border-box; 
+
+/* If a row only has one column (like your last film-row),
+   the single item will naturally expand to available space. */
+
+/* ---------- Responsive: single column on small screens ---------- */
+@media (max-width: 900px) {
+  .film-row {
+    gap: 30px;
+  }
+
+  .film-card,
+  .film-card-right {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
-.film-card p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; 
+
+/* Small screens: tighten padding */
+@media (max-width: 480px) {
+  .film-grid-wrapper { padding-left: 16px; padding-right: 16px; }
+  .film-card p { font-size: 13px; }
 }
+
 /*Nav bar for all pages logo hover*/
 .separator-with-logo::before {
   content: "";
@@ -112,6 +138,59 @@
       color: white;
       text-decoration: none; 
     }
+
+/* Hamburger Button (hidden on PC) */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* ===== MOBILE STYLES ===== */
+@media (max-width: 768px) {
+  /* Show hamburger */
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    z-index: 200;
+  }
+
+  /* Hide PC nav */
+  .navbar ul.nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    padding-top: 80px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  /* Show nav when toggled */
+  .navbar ul.nav-links.show {
+    display: flex;
+  }
+
+  /* Bigger tap targets */
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  /* Hide separators on mobile */
+  .separator,
+  .separator-with-logo {
+    display: none;
+  }
+}
 
 
 

@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title> Scoop of Ignorance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css"/>
-   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <style>
     body, html {
       margin: 0;
@@ -128,16 +128,16 @@ footer {
 
   <!-- Reuse your site-wide navbar -->
   <nav class="navbar">
-    <ul>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links">
       <li class="custom-font"><a href="/">Home</a></li>
       <li class="separator"></li>
-      <li class="custom-font"><a href="../showreel.html">Showreel</a></li>
+      <li class="custom-font"><a href="showreel.html">Showreel</a></li>
       <li class="separator-with-logo"></li>
-      <li class="custom-font"><a href="../film.html">Projects</a></li>
+      <li class="custom-font"><a href="film.html">Projects</a></li>
       <li class="separator"></li>
-      <li class="custom-font"><a href="../about.html">About</a></li>
+      <li class="custom-font"><a href="about.html">About</a></li>
     </ul>
-    
   </nav>
 
   <!-- Hero Image -->
@@ -245,6 +245,9 @@ Official Selection<br></li>
 
 <script>
   document.body.classList.add('fade-in');
+   function toggleMenu() {
+  document.querySelector('.nav-links').classList.toggle('show');
+}
 </script>
 
 </body>
