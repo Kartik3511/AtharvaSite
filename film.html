@@ -1,33 +1,25 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <title>Filmography - Atharva Mhaske</title>
-  <link rel="icon" type="Image/png" href="logo.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <title>Projects — Atharva Mhaske</title>
+  <meta name="description" content="Filmography of Atharva Mhaske — documentaries, short films, and commercial work including international award-winning projects.">
+  <meta property="og:title" content="Projects — Atharva Mhaske">
+  <meta property="og:description" content="Filmography of Atharva Mhaske — documentaries, short films, and commercial work including international award-winning projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://atharvamhaske.com/film.html">
+  <meta property="og:image" content="https://atharvamhaske.com/croppedhome.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    html { scroll-behavior: smooth; }
-    body, html { margin: 0; padding: 0; width: 100%; height: 100%; background: black; font-family: 'Poppins', sans-serif; color: white;}
-    footer { text-align: center; font-size: 12px; line-height: 1.5; color: #aaa; padding: 20px; margin-top: 50px; }
-    body.fade-in { animation: fadeInAnimation ease 1s; animation-iteration-count: 1; animation-fill-mode: forwards; }
-    @keyframes fadeInAnimation { 0% {opacity: 0; transform: translateY(10px);} 100% {opacity: 1; transform: translateY(0);} }
-    #scrollTopBtn { display: none; position: fixed; bottom: 40px; right: 30px; z-index: 99; background-color: #ffffff10; border: 1px solid #fff; color: white; cursor: pointer; padding: 10px 14px; border-radius: 50%; font-size: 18px; transition: 0.3s; }
-    #scrollTopBtn:hover { background-color: #ffffff20; }
-
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Poppins:wght@400;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
   <nav class="navbar">
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
     <ul class="nav-links">
       <li class="custom-font"><a href="/">Home</a></li>
       <li class="separator"></li>
@@ -39,101 +31,67 @@
     </ul>
   </nav>
 
-<div class="film-grid-wrapper">
-<div class="film-grid">
-  <!-- Film 1 -->
-   <div class="film-row">
+  <div class="film-grid-wrapper">
+    <div class="film-grid">
+      <div class="film-row">
+        <div class="film-card">
+          <a href="films/Film1.html">
+            <img src="films/FilmStills/.png" alt="Film 1">
+            <p>01. Unknown</p>
+          </a>
+        </div>
+        <div class="film-card-right">
+          <a href="films/Film2.html">
+            <img src="films/FilmStills/poster.png" alt="Scoop of Ignorance 2024">
+            <p>02. Scoop of Ignorance | 2024</p>
+          </a>
+        </div>
+      </div>
+      <div class="film-row">
+        <div class="film-card">
+          <a href="films/Film3.html">
+            <img src="films/FilmStills/Vadapav_Poster.webp" alt="The Story of Vadapav 2022">
+            <p>03. The Story of Vadapav | 2022</p>
+          </a>
+        </div>
+        <div class="film-card-right">
+          <a href="films/Film4.html">
+            <img src="films/FilmStills/SOS_Poster.png" alt="Soul of a Sapling 2024">
+            <p>04. Soul of a Sapling | 2024</p>
+          </a>
+        </div>
+      </div>
+      <div class="film-row">
+        <div class="film-card">
+          <a href="films/Film5.html">
+            <img src="film4.jpg" alt="Jio World Plaza 1 Year Anniversary 2024">
+            <p>05. Jio World Plaza - 1 Year Anniversary | 2024</p>
+          </a>
+        </div>
+        <div class="film-card-right">
+          <a href="films/Film6.html">
+            <img src="film5.jpg" alt="Ajio Luxe Wkend 2025 Ramp Walk">
+            <p>06. Ajio Luxe Wkend 2025 - Ramp Walk | 2025</p>
+          </a>
+        </div>
+      </div>
+      <div class="film-row">
+        <div class="film-card">
+          <a href="films/Film7.html">
+            <img src="films/FilmStills/Naggar_Poster.jpg" alt="Naggar Castle and People Manali Documentary 2024">
+            <p>07. Naggar Castle &amp; People - Manali Short Documentary | 2024</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <div class="film-card">
-    <a href="films/Film1.html">
-    <img src="films/FilmStills/.png" alt="Film 1">
-    <p>01.Unknown</p>
-  </a>
-  </div>
-  <!-- Film 2 -->  
-  <div class="film-card-right">
-    <a href="films/Film2.html">
-    <img src="films/FilmStills/poster.png" alt="Film 2">
-    <p>02. Scoop of Ignorance | 2024</p>
-  </a>
-  </div>
-   </div>
+  <footer>
+    Filmmaker based in Mumbai. Currently open for new projects.<br>
+    (M) hi@atharvamhaske.com (P) +91 9823251314 | +91 7756803800 (I) @samosafoto<br>
+    &copy; 2025 - All rights reserved
+  </footer>
 
-  <!-- Film 3 -->
-  <div class="film-row">
-  <div class="film-card">
-    <a href="films/Film3.html">
-    <img src="films/FilmStills/Vadapav_Poster.webp" alt="Film 3">
-    <p>03. The Story of Vadapav | 2022</p>
-    </a>
-  </div>
-  
-
-  <!-- Film 4 (spans first column only) -->
- 
-  <div class="film-card-right">
-    <a href="films/Film4.html">
-    <img src="films/FilmStills/SOS_Poster.png" alt="Film 4">
-    <p>04.  Soul of a Sapling | 2024</p>
-    </a>
-  </div>
-  </div>
-  <!--Film 5-->
-    <div class="film-row">
-  <div class="film-card">
-    <a href="films/Film5.html">
-    <img src="film4.jpg" alt="Film 5">
-    <p>05.  Jio World Plaza - 1 Year Anniversary | 2024</p>
-    </a>
-  </div>
-  
-    <!--Film 6-->
-  <div class="film-card-right">
-    <a href="films/Film6.html">
-    <img src="film5.jpg" alt="Film 6">
-    <p>06.  Ajio Luxe Wkend 2025 - Ramp Walk | 2025</p>
-    </a>
-  </div>
-  </div>
-      <!--Film 7-->
-  <div class="film-row">
-  <div class="film-card">
-    <a href="films/Film7.html">
-    <img src="films/FilmStills/Naggar_Poster.jpg" alt="Film 7">
-    <p>07.  Naggar Castle & People - Manali Short Documentary  | 2024</p>
-    </a>
-  </div>
-  </div>
-  </div>
-</div>
-</div>
-
-
-
-<footer>
-  Filmmaker based in Mumbai. Currently open for new projects.<br>
-  (M) hi@atharvamhaske.com (P) +91 9823251314 | +91 7756803800 (I) @samosafoto<br>
-  © 2025 - All rights reserved
-</footer>
-
-
-<script>
-  document.body.classList.add('fade-in');
-  const scrollTopBtn = document.createElement("button");
-  scrollTopBtn.id = "scrollTopBtn";
-  scrollTopBtn.innerHTML = "↑";
-  document.body.appendChild(scrollTopBtn);
-  window.onscroll = function() {
-    if (document.documentElement.scrollTop > 100) { scrollTopBtn.style.display = "block"; }
-    else { scrollTopBtn.style.display = "none"; }
-  };
-  scrollTopBtn.onclick = function() {
-    document.documentElement.scrollTo({top: 0, behavior: "smooth"});
-  };
-   function toggleMenu() {
-  document.querySelector('.nav-links').classList.toggle('show');
-}
-</script>
-
+  <script src="script.js" defer></script>
 </body>
 </html>

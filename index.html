@@ -1,77 +1,62 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <title>Atharva Mhaske</title>
-  <link rel="icon" type="Image/png" href="lo">
-
-  <!-- Google Fonts -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atharva Mhaske — Filmmaker</title>
+  <meta name="description" content="Atharva Mhaske is a filmmaker based in Mumbai. Director, producer, and sound designer with 15+ documentaries and international award-winning films.">
+  <meta property="og:title" content="Atharva Mhaske — Filmmaker">
+  <meta property="og:description" content="Filmmaker based in Mumbai. Director, producer, and sound designer with 15+ documentaries and international award-winning films.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://atharvamhaske.com/">
+  <meta property="og:image" content="https://atharvamhaske.com/croppedhome.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Poppins:wght@400;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
   <style>
-html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  overflow-y: scroll;  /* This keeps width consistent with pages that scroll */
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden; /* Locks scrolling */
-}
-
-    
-
-.video-background {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 100%;
-  height: auto;
-  z-index: -1;
-}
-    
-
-.wrapper {
-  height: calc(100vh - 60px); /* or adjust based on your nav height */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-}
-
-.content {
-  max-width: 600px;
-  width: 90vw;
-  height: auto;
-  display: block;
-  transform: translateY(-90px) scale(1);
-  transition: transform 0.5s ease, opacity 0.5s ease;
-}
-
-.content:hover {
-  transform: translateY(-90px) scale(1.03); /* keep same Y shift */
-  opacity: 0.85;
-}
+    html {
+      margin: 0; padding: 0;
+      width: 100%; height: 100%;
+      background: black;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      overflow-y: scroll; /* keeps width consistent with other pages */
+    }
+    body {
+      margin: 0; padding: 0;
+      width: 100%; height: 100%;
+      overflow: hidden;
+    }
+    .video-background {
+      position: fixed;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%; height: auto;
+      z-index: -1;
+    }
+    .wrapper {
+      height: calc(100vh - 60px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .content {
+      max-width: 600px;
+      width: 90vw;
+      height: auto;
+      display: block;
+      transform: translateY(-90px) scale(1);
+      transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+    .content:hover {
+      transform: translateY(-90px) scale(1.03);
+      opacity: 0.85;
+    }
     footer {
       position: absolute;
       bottom: 10px;
@@ -83,67 +68,42 @@ body {
       z-index: 10;
       padding: 0 10px;
     }
-
     body.fade-in {
       animation: fadeInAnimation ease 1s;
       animation-iteration-count: 1;
       animation-fill-mode: forwards;
     }
-
     @keyframes fadeInAnimation {
-      0% {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      0%   { opacity: 0; transform: translateY(10px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
-    html, body {
-  height: 100%;
-  margin: 0;
-}
-
-.cover {
-  position: fixed; /* or absolute */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-image: url('your-image.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
-  opacity: 40%;
-}
-    .kartikgrid{
+    .cover {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-image: url('kartik_grid.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      z-index: 1000;
-      opacity: 50%;
+      top: 0; left: 0;
+      width: 100%; height: 100vh;
+      z-index: -1;
+      opacity: 40%;
     }
-
-    
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Atharva Mhaske",
+    "jobTitle": "Filmmaker",
+    "url": "https://atharvamhaske.com",
+    "sameAs": ["https://www.instagram.com/samosafoto/","https://www.youtube.com/@samosafoto"]
+  }
+  </script>
 </head>
 
-<body>
+<body class="home-page">
   <video autoplay muted loop playsinline preload="auto" class="video-background">
     <source src="BG_VIDEO.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
   </video>
 
   <nav class="navbar">
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
     <ul class="nav-links">
       <li class="custom-font"><a href="/">Home</a></li>
       <li class="separator"></li>
@@ -154,27 +114,18 @@ body {
       <li class="custom-font"><a href="about.html">About</a></li>
     </ul>
   </nav>
-  <body>
-    <img class="cover" src="black.jpg">
+
+  <img class="cover" src="black.jpg" alt="">
   <div class="wrapper">
-    <img class="content" src="croppedhome.png" alt="">
+    <img class="content" src="croppedhome.png" alt="Atharva Mhaske filmmaker portfolio">
   </div>
-</body>
-
-
 
   <footer>
-  Filmmaker based in Mumbai. Currently open for new projects.<br>
-  (M) hi@atharvamhaske.com (P) +91 9823251314 | +91 7756803800 (I) @samosafoto<br>
-  © 2025 - All rights reserved
+    Filmmaker based in Mumbai. Currently open for new projects.<br>
+    (M) hi@atharvamhaske.com (P) +91 9823251314 | +91 7756803800 (I) @samosafoto<br>
+    &copy; 2025 - All rights reserved
   </footer>
 
-<script>
-  document.body.classList.add('fade-in');
-  function toggleMenu() {
-  document.querySelector('.nav-links').classList.toggle('show');
-}
-</script>
-
+  <script src="script.js" defer></script>
 </body>
 </html>
